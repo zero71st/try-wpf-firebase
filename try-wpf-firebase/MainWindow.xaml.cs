@@ -45,6 +45,12 @@ namespace MySchool_Firebase
             btGet.Click +=btGet_Click;
             btUpdate.Click += btUpdate_Click;
             btDelete.Click += btDelete_Click;
+            btClose.Click += btClose_Click;
+        }
+
+        void btClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
         async void btGet_Click(object sender, RoutedEventArgs e)
         {
